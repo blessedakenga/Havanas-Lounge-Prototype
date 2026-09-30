@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Havanas Lounge &amp; Grill, Kakamega. Food, drinks and sherehe. See events and reserve your table on WhatsApp.">
+<meta name="theme-color" content="#0d0a0f">
+<meta property="og:title" content="Havanas Lounge | Kakamega">
+<meta property="og:description" content="Events, tables and bottles. Reserve your table before the night fills up.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A5%82%3C/text%3E%3C/svg%3E">
+<title>Havanas Lounge | Kakamega</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header><b>Havanas</b><nav><a href="#events">Events</a><a href="#menu">Menu</a><a href="#visit">Visit</a></nav></header>
+
+<section class="hero">
+  <div class="hero-photo"><img src="images/hero.jpg" alt="Havanas Lounge lit up at night"></div>
+  <h1 class="sign">Havanas<small>LOUNGE &amp; GRILL · KAKAMEGA</small></h1>
+  <p>Food, drinks and sherehe. Book your table before the night fills up.</p>
+  <div class="cta"><a class="btn" href="#reserve">Reserve a table</a><a class="btn ghost" href="#events">See this week</a></div>
+  <div class="next"><span>Next up</span><div class="rail" id="rail">
+    <button class="po" data-e="0"><img src="images/event-arrow-bwoy.jpg" alt="Arrow Bwoy Live poster"><b>Sat 3 Oct</b><small>Arrow Bwoy Live x DJ Kibe</small></button>
+    <button class="po" data-e="1"><img src="images/event-october-takeover.jpg" alt="Havanas October Takeover poster"><b>All October</b><small>Havanas October Takeover</small></button>
+    <div class="po past"><img src="images/event-kingly.jpg" alt="Kingly Experience poster"><b>Recent: Sun 20 Sep</b><small>Kingly Experience</small></div>
+  </div></div>
+</section>
+
+<section id="events">
+  <h2>This week at Havanas</h2>
+  <p class="lead">Tap RSVP and your table request is filled in for you.</p>
+  <div id="evlist"></div>
+</section>
+
+<section id="menu">
+  <h2>Tables and bottles</h2>
+  <p class="lead">Tap a package to add it to your reservation. Prices are samples until the owner confirms.</p>
+  <div class="packs" id="packs">
+    <button class="pack" data-p="0"><h3>Lounge Table</h3><div class="p">From KES 3,000</div><p>Reserved seating for up to 4, table service, priority entry.</p><span class="go">Choose this package</span></button>
+    <button class="pack hot" data-p="1"><h3>Gold Bottle</h3><div class="p">From KES 9,000</div><p>Reserved booth, a premium bottle with mixers, host for the night.</p><span class="go">Choose this package</span></button>
+    <button class="pack" data-p="2"><h3>Birthday Night</h3><div class="p">Ask for a quote</div><p>Table, cake moment, DJ shout-out and photos for your group.</p><span class="go">Choose this package</span></button>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>The vibe</h2>
+  <p class="lead">Photos and clips from the club go here.</p>
+  <div class="gal"><div class="w ph"><img src="images/gallery-crowd.jpg" alt="Guests at Havanas Lounge"></div><div>Bar</div><div>DJ booth</div><div>Crowd</div><div>Cocktails</div></div>
+</section>
+
+<section class="res" id="reserve"><div>
+  <h2>Reserve a table</h2>
+  <p class="lead">Send your request and we confirm on WhatsApp.</p>
+  <form id="rf">
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Phone<input name="phone" type="tel" required autocomplete="tel" placeholder="07xx xxx xxx"></label>
+    <label>Date<input name="date" type="date" required></label>
+    <label>Arrival time<select name="time"><option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option><option>11:00 PM</option></select></label>
+    <label>Guests<select name="guests"><option>2</option><option>3–4</option><option>5–8</option><option>9+</option></select></label>
+    <label>Table type<select name="pack" id="psel"><option value="">Not sure yet</option><option value="0">Lounge Table</option><option value="1">Gold Bottle</option><option value="2">Birthday Night</option></select></label>
+    <label class="full">Package details<textarea id="pdet" name="pdet" rows="3" placeholder="Pick a package above and its details appear here"></textarea></label>
+    <label class="full">Event or note (optional)<input name="note" id="note" placeholder="Which event, or anything we should know"></label>
+    <button class="btn" type="submit">Send request on WhatsApp</button>
+  </form>
+  <p id="done">Request ready. Send the WhatsApp message and we will confirm your table.</p>
+</div></section>
+
+<section id="visit">
+  <h2>Find us</h2>
+  <div class="visit">
+    <dl>
+      <dt>Location</dt><dd>Along the Kakamega–Kisumu Highway, past Amalemba (River Yala), opposite Muraka Primary</dd>
+      <dt>Hours</dt><dd>Add opening hours</dd>
+      <dt>House rules</dt><dd>18+ with valid ID. Smart casual.</dd>
+      <dt>Call or WhatsApp</dt><dd><a data-wa data-phone href="https://wa.me/254790332916">+254 790 332 916</a></dd>
+    </dl>
+    <div class="gal" style="grid-template-columns:1fr;grid-auto-rows:200px"><div>Google Map goes here</div></div>
+  </div>
+</section>
+
+<footer>© 2026 Havanas Lounge, Kakamega. Drink responsibly. Website by Manfredy Web Solutions.</footer>
+
+<div class="bar"><a class="btn" href="#reserve">Reserve a table</a><a class="btn ghost" id="wabar" data-wa href="https://wa.me/254790332916">WhatsApp</a></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
